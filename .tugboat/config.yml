@@ -107,6 +107,6 @@ services:
         # SSH key found in the Tugboat Repository configuration must be
         # copied to the external server in order to use scp.
         # NORMALLY you would copy a backup into tugboat, but for this demo we are using an empty db in the repo itself
-        - curl https://github.com/NickStees/drupal8-starter/blob/master/db.sql.gz?raw=true -o db.sql.gz
+        - curl https://raw.githubusercontent.com/NickStees/drupal8-starter/master/db.sql.gz -o db.sql.gz
         - zcat db.sql.gz | mysql tugboat
         - rm db.sql.gz
