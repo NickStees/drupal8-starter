@@ -27,7 +27,7 @@ services:
 
         # Link the document root to the expected path. This example links /web
         # to the docroot.
-        - ln -snf "${TUGBOAT_ROOT}/docroot" "${DOCROOT}"
+        - ln -snf "${TUGBOAT_ROOT}/web" "${DOCROOT}"
 
         # A common practice in many Drupal projects is to store the config and
         # private files outside of the Drupal root. If that's the case for your
