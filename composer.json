@@ -40,9 +40,6 @@
     },
     "extra": {
         "patches": {
-            "drupal/core": {
-                "https://www.drupal.org/project/drupal/issues/2982052": "https://git.drupalcode.org/project/drupal/-/merge_requests/3138.diff"
-            }
           },
         "drupal-scaffold": {
             "locations": {
