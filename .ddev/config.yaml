@@ -1,10 +1,10 @@
 name: drupal8-starter
 type: drupal9
 docroot: web
-php_version: "7.3"
+php_version: "8.1"
 webserver_type: apache-fpm
-router_http_port: "80"
-router_https_port: "443"
+router_http_port: "808"
+router_https_port: "4438"
 xdebug_enabled: false
 additional_hostnames: []
 additional_fqdns: []

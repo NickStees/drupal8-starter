@@ -87,6 +87,7 @@ services:
       # from the base preview.
       build:
         - composer install --optimize-autoloader
+        - vendor/bin/drush site-install
         - vendor/bin/drush cache:rebuild
         - vendor/bin/drush config:import -y
 
@@ -107,6 +108,6 @@ services:
         # SSH key found in the Tugboat Repository configuration must be
         # copied to the external server in order to use scp.
         # NORMALLY you would copy a backup into tugboat, but for this demo we are using an empty db in the repo itself
-        - curl https://raw.githubusercontent.com/NickStees/drupal8-starter/master/db.sql.gz -o db.sql.gz
-        - zcat db.sql.gz | mysql tugboat
-        - rm db.sql.gz
+        # - curl https://raw.githubusercontent.com/NickStees/drupal8-starter/master/db.sql.gz -o db.sql.gz
+        # - zcat db.sql.gz | mysql tugboat
+        # - rm db.sql.gz
